@@ -38,7 +38,7 @@ Ao final deve se exibir uma mensagem:
   ex: mago atacou usando magia
   guerreiro atacou usando espada
 
-  ## Linguagens
+## Linguagens
 [![JavaScript](https://img.shields.io/badge/JavaScript-080808?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## Ferramentas
