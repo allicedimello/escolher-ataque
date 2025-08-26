@@ -15,20 +15,24 @@ class heroiJogo{
             ataque = "artes marciais"
         } else if(this.tipo === "ninja"){
             ataque = "shuriken"
-        } else {
-            console.log(`${this.tipo} não é um tipo válido, digite novamente`)
-            return
         }
-        console.log(`o ${this.tipo} atacou usando ${ataque}`);
+        return `O ${this.tipo} atacou usando ${ataque}`;
     }
 }
 
-let heroiAlvo = new heroiJogo("Dumbledore", 303, "mago")
-let heroiTargaryen = new heroiJogo("Daemon", 53, "guerreiro")
-let heroiBruce = new heroiJogo("Batman", 43, "monge")  
-let heroiUchiha = new heroiJogo("Naruto", 23, "ninja")
+document.addEventListener("DOMContentLoaded", () => {
 
-heroiAlvo.atacar()
-heroiTargaryen.atacar()
-heroiBruce.atacar()
-heroiUchiha.atacar()
+    const botao = document.getElementById("botaoAtacar");
+
+    botao.addEventListener("click", () => {
+        const nome = document.getElementById("nome").value;
+        const idade = parseInt(document.getElementById("idade").value);
+        const tipo = document.getElementById("tipo").value;
+
+        const heroi = new heroiJogo(nome, idade, tipo);
+
+        const resultado = heroi.atacar();
+
+        document.getElementById("saida").innerText = resultado;
+    });
+});
