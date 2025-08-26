@@ -20,7 +20,8 @@ class heroiJogo{
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
 
     const botao = document.getElementById("botaoAtacar");
 
@@ -29,10 +30,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const idade = parseInt(document.getElementById("idade").value);
         const tipo = document.getElementById("tipo").value;
 
+        if (!nome || isNaN(idade) || idade <= 0 || !tipo) {
+            document.getElementById("saida").textContent = "Por favor, preencha ambos os campos corretamente.";
+            return;
+        }
+
         const heroi = new heroiJogo(nome, idade, tipo);
 
         const resultado = heroi.atacar();
 
         document.getElementById("saida").innerText = resultado;
+
+        setTimeout(function() {
+            document.getElementById("form").reset();
+        }, 500);
     });
 });
