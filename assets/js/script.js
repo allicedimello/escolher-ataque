@@ -6,16 +6,15 @@ class heroiJogo{
     }
 
     atacar(){
-        let ataque
-        if(this.tipo === "mago"){
-            ataque = "magia"
-        } else if(this.tipo === "guerreiro"){
-            ataque = "espada"
-        } else if(this.tipo === "monge"){
-            ataque = "artes marciais"
-        } else if(this.tipo === "ninja"){
-            ataque = "shuriken"
-        }
+        const ataques = {
+            mago: "magia",
+            guerreiro: "espada",
+            monge: "artes marciais",
+            ninja: "shuriken"
+        };
+        
+        const ataque = ataques[this.tipo];
+
         return `O ${this.tipo} atacou usando ${ataque}`;
     }
 }
