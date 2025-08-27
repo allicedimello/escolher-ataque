@@ -40,6 +40,8 @@ Ao final deve se exibir uma mensagem:
 
 ## Linguagens
 [![JavaScript](https://img.shields.io/badge/JavaScript-080808?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![HTML](https://img.shields.io/badge/HTML-080808?style=for-the-badge&logo=HTML5)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/css-080808?style=for-the-badge&logo=CSS&logoColor=0E76A8)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ## Ferramentas
 [![Git](https://img.shields.io/badge/-Git-080808?style=for-the-badge&logo=git)](https://git-scm.com/docs/git/pt_BR)
