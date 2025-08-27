@@ -31,7 +31,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
         const tipo = document.getElementById("tipo").value;
 
         if (!nome || isNaN(idade) || idade <= 0 || !tipo) {
-            document.getElementById("saida").textContent = "Por favor, preencha ambos os campos corretamente.";
+            document.getElementById("saida").textContent = "Por favor, preencha os campos corretamente.";
             return;
         }
 
